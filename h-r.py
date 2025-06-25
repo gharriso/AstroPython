@@ -19,7 +19,7 @@ WHERE
     AND bp_rp IS NOT NULL  -- Ensures BP-RP color exists
     AND phot_g_mean_mag IS NOT NULL  -- Ensures G-band magnitude exists
     AND teff_gspphot IS NOT NULL  -- Ensures temperature exists
-LIMIT 50000
+LIMIT 100
 """
 
 print("Querying Gaia DR3 archive... This may take some time.")
